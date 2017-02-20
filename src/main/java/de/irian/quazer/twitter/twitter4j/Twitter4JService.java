@@ -92,7 +92,7 @@ public class Twitter4JService implements TwitterService {
 				return status;
 				
 			} catch (twitter4j.TwitterException e) {
-				logger.error(e.getMessage());
+				logger.error(e.getMessage(), e);
 				throw new TwitterException(e.getErrorMessage());
 			}
 		}

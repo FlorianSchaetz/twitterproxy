@@ -48,7 +48,10 @@ public class TwitterRestController {
 			throw new MaxResultsInvalidException();
 		}
 		
-		return twitterService.newSearch(searchTerm).withMaxResults(maxResults).withExact(exact).search();
+		return twitterService.newSearch(searchTerm)
+				.withMaxResults(maxResults)
+				.withExact(exact)
+				.search();
 
 	}
 	
