@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Twitter Proxy Test Page</title>
+<meta name="description" content="Test Page for the Twitter Proxy">
+<meta name="author" content="Florian Schätz">
+
+</head>
+
+<body>
+
+	<form action="/api/v1/search?" method="get">
+		Search term: <input type="text" name="searchTerm"><br>
+		Max results: <input type="number" name="maxResults" min="1" max="100" value="20">
+		Exact: <input type="checkbox" name="exact"value="true"> 
+		<input type="submit" value="Submit">
+	</form>
+
+</body>
+</html>
