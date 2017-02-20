@@ -1,2 +1,0 @@
-# twitterproxy
-Little REST exercise
